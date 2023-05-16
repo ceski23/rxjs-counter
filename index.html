@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script type="module" src="./src/index.ts"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="counter"></p>
+        <button type="button" class="start">START</button>
+        <button type="button" class="pause">PAUSE</button>
+        <button type="button" class="reset">RESET</button>
+        <div>
+            <button type="button" class="set">SET TO</button>
+            <input type="number" class="setInput" value="5" />
+        </div>
+        <label>
+            Delay:
+            <input type="range" min="0" max="2000" class="delay" value="500" />
+        </label>
+        <label>
+            Step:
+            <input type="number" class="step" value="1" />
+        </label>
+    </div>
+</body>
+
+</html>
